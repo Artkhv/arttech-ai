@@ -254,6 +254,12 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;t
 }
 
 /* FOOTER */
+.footer{padding:44px 0 52px;border-top:1px solid rgba(255,255,255,.08);font-family:var(--font-text);font-size:.92rem;line-height:1.6;color:rgba(255,255,255,.55)}
+.footer-org{display:flex;flex-wrap:wrap;gap:4px 20px;margin-bottom:14px}
+.footer-docs{display:flex;flex-wrap:wrap;gap:8px 26px;margin-bottom:18px}
+.footer a{color:rgba(255,255,255,.78);text-decoration:underline;text-decoration-color:rgba(255,255,255,.25);text-underline-offset:3px;transition:color .25s}
+.footer a:hover{color:var(--pink-light)}
+@media (max-width:600px){.footer{font-size:.85rem;padding:36px 0 44px}.footer-docs{flex-direction:column}}
 
 /* ANIM */
 .fade-up{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.16,1,.3,1)}
@@ -596,7 +602,13 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;t
 
 <footer class="footer">
   <div class="container">
-    <p>© 2026 artTech · Школа профессий · Хабаровск, ул. Шеронова, 92</p>
+    <div class="footer-org"><span>АНО ДО «НАСТАВНИКИ»</span><span>ОГРН 1212700018552</span><span>ИНН 2721252826</span><span>Хабаровск, ул. Шеронова, 92</span></div>
+    <nav class="footer-docs" aria-label="Документы">
+      <a href="docs/privacy-policy.pdf" target="_blank" rel="noopener">Политика обработки персональных данных</a>
+      <a href="docs/personal-data-consent.pdf" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>
+      <a href="https://media.siteedu.ru/sub/3422/documents/%D0%92%D1%8B%D0%BF%D0%B8%D1%81%D0%BA%D0%B0_%D0%B8%D0%B7_%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80%D0%B0_%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8__%D0%9B035_01286_27_006514.pdf" target="_blank" rel="noopener">Образовательная лицензия № Л035-01286-27/00651420 от 16.05.2023</a>
+    </nav>
+    <p>© 2026 artTech · Школа профессий</p>
   </div>
 </footer>
 
